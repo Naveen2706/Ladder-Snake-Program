@@ -29,7 +29,10 @@ package com.bridgelabz.board;
 
       	case 2:
     	   position = (position + diceValue);
-
+           if(position>100){
+		  			position = (position - diceValue);
+		  			continue;
+      				}
       	System.out.println( "your position after ladder is :" + position );
      		break;
 
